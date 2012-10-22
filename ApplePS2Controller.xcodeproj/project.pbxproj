@@ -7,11 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27101C66162824EC00CF2817 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27101C64162824EC00CF2817 /* InfoPlist.strings */; };
+		27101C871628279D00CF2817 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27101C851628279D00CF2817 /* InfoPlist.strings */; };
+		27101C8A1628279D00CF2817 /* AppleACPIPS2Nub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27101C891628279D00CF2817 /* AppleACPIPS2Nub.cpp */; };
 		277890371628180800E81B58 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 277890351628180800E81B58 /* InfoPlist.strings */; };
 		2778903A1628180800E81B58 /* ApplePS2Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 277890391628180800E81B58 /* ApplePS2Controller.cpp */; };
+		27789042162818B000E81B58 /* ApplePS2Device.h in Headers */ = {isa = PBXBuildFile; fileRef = 27789041162818B000E81B58 /* ApplePS2Device.h */; };
+		27789044162818EE00E81B58 /* ApplePS2KeyboardDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 27789043162818EE00E81B58 /* ApplePS2KeyboardDevice.h */; };
+		277890461628191600E81B58 /* ApplePS2MouseDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 277890451628191600E81B58 /* ApplePS2MouseDevice.h */; };
+		277890491628194900E81B58 /* ApplePS2KeyboardDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 277890471628194900E81B58 /* ApplePS2KeyboardDevice.cpp */; };
+		2778904C1628196F00E81B58 /* ApplePS2MouseDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2778904B1628196F00E81B58 /* ApplePS2MouseDevice.cpp */; };
+		27E4F514163316810079150D /* ApplePS2Keyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27E4F511163316810079150D /* ApplePS2Keyboard.cpp */; };
+		27E4F515163316810079150D /* ApplePS2Keyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E4F512163316810079150D /* ApplePS2Keyboard.h */; };
+		27E4F516163316810079150D /* ApplePS2ToADBMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E4F513163316810079150D /* ApplePS2ToADBMap.h */; };
+		27FCD7E71633588900155ED2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27FCD7E51633588900155ED2 /* InfoPlist.strings */; };
+		27FCD7EA1633588900155ED2 /* ApplePS2Mouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27FCD7E91633588900155ED2 /* ApplePS2Mouse.cpp */; };
+		27FCD7F7163359B600155ED2 /* ApplePS2Keyboard.kext in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27101C60162824EC00CF2817 /* ApplePS2Keyboard.kext */; };
+		27FCD7F8163359BC00155ED2 /* ApplePS2Mouse.kext in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27FCD7E11633588900155ED2 /* ApplePS2Mouse.kext */; };
+		27FCD7F9163359C300155ED2 /* AppleACPIPS2Nub.kext in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27101C811628279D00CF2817 /* AppleACPIPS2Nub.kext */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		27FCD7F01633599A00155ED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277890221628180800E81B58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27101C5F162824EC00CF2817;
+			remoteInfo = ApplePS2Keyboard;
+		};
+		27FCD7F4163359A000155ED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277890221628180800E81B58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27FCD7E01633588900155ED2;
+			remoteInfo = ApplePS2Mouse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27FCD7F6163359AA00155ED2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				27FCD7F9163359C300155ED2 /* AppleACPIPS2Nub.kext in CopyFiles */,
+				27FCD7F8163359BC00155ED2 /* ApplePS2Mouse.kext in CopyFiles */,
+				27FCD7F7163359B600155ED2 /* ApplePS2Keyboard.kext in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		27101C60162824EC00CF2817 /* ApplePS2Keyboard.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplePS2Keyboard.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		27101C63162824EC00CF2817 /* ApplePS2Keyboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApplePS2Keyboard-Info.plist"; sourceTree = "<group>"; };
+		27101C65162824EC00CF2817 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27101C6A162824EC00CF2817 /* ApplePS2Keyboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApplePS2Keyboard-Prefix.pch"; sourceTree = "<group>"; };
+		27101C811628279D00CF2817 /* AppleACPIPS2Nub.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleACPIPS2Nub.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		27101C841628279D00CF2817 /* AppleACPIPS2Nub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppleACPIPS2Nub-Info.plist"; sourceTree = "<group>"; };
+		27101C861628279D00CF2817 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27101C881628279D00CF2817 /* AppleACPIPS2Nub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleACPIPS2Nub.h; sourceTree = "<group>"; };
+		27101C891628279D00CF2817 /* AppleACPIPS2Nub.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AppleACPIPS2Nub.cpp; sourceTree = "<group>"; };
+		27101C8B1628279D00CF2817 /* AppleACPIPS2Nub-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppleACPIPS2Nub-Prefix.pch"; sourceTree = "<group>"; };
 		2778902D1628180800E81B58 /* ApplePS2Controller.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplePS2Controller.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		277890311628180800E81B58 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
 		277890341628180800E81B58 /* ApplePS2Controller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApplePS2Controller-Info.plist"; sourceTree = "<group>"; };
@@ -19,10 +77,45 @@
 		277890381628180800E81B58 /* ApplePS2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePS2Controller.h; sourceTree = "<group>"; };
 		277890391628180800E81B58 /* ApplePS2Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ApplePS2Controller.cpp; sourceTree = "<group>"; };
 		2778903B1628180800E81B58 /* ApplePS2Controller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApplePS2Controller-Prefix.pch"; sourceTree = "<group>"; };
+		27789041162818B000E81B58 /* ApplePS2Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplePS2Device.h; sourceTree = "<group>"; };
+		27789043162818EE00E81B58 /* ApplePS2KeyboardDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplePS2KeyboardDevice.h; sourceTree = "<group>"; };
+		277890451628191600E81B58 /* ApplePS2MouseDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplePS2MouseDevice.h; sourceTree = "<group>"; };
+		277890471628194900E81B58 /* ApplePS2KeyboardDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApplePS2KeyboardDevice.cpp; sourceTree = "<group>"; };
+		2778904B1628196F00E81B58 /* ApplePS2MouseDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApplePS2MouseDevice.cpp; sourceTree = "<group>"; };
+		27E4F511163316810079150D /* ApplePS2Keyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApplePS2Keyboard.cpp; sourceTree = "<group>"; };
+		27E4F512163316810079150D /* ApplePS2Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplePS2Keyboard.h; sourceTree = "<group>"; };
+		27E4F513163316810079150D /* ApplePS2ToADBMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplePS2ToADBMap.h; sourceTree = "<group>"; };
+		27FCD7E11633588900155ED2 /* ApplePS2Mouse.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplePS2Mouse.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		27FCD7E41633588900155ED2 /* ApplePS2Mouse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApplePS2Mouse-Info.plist"; sourceTree = "<group>"; };
+		27FCD7E61633588900155ED2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27FCD7E81633588900155ED2 /* ApplePS2Mouse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePS2Mouse.h; sourceTree = "<group>"; };
+		27FCD7E91633588900155ED2 /* ApplePS2Mouse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ApplePS2Mouse.cpp; sourceTree = "<group>"; };
+		27FCD7EB1633588900155ED2 /* ApplePS2Mouse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApplePS2Mouse-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		27101C5B162824EC00CF2817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27101C7C1628279D00CF2817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277890281628180800E81B58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FCD7DC1633588900155ED2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,10 +125,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27101C61162824EC00CF2817 /* ApplePS2Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				27E4F511163316810079150D /* ApplePS2Keyboard.cpp */,
+				27E4F512163316810079150D /* ApplePS2Keyboard.h */,
+				27E4F513163316810079150D /* ApplePS2ToADBMap.h */,
+				27101C62162824EC00CF2817 /* Supporting Files */,
+			);
+			path = ApplePS2Keyboard;
+			sourceTree = "<group>";
+		};
+		27101C62162824EC00CF2817 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27101C63162824EC00CF2817 /* ApplePS2Keyboard-Info.plist */,
+				27101C64162824EC00CF2817 /* InfoPlist.strings */,
+				27101C6A162824EC00CF2817 /* ApplePS2Keyboard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27101C821628279D00CF2817 /* AppleACPIPS2Nub */ = {
+			isa = PBXGroup;
+			children = (
+				27101C881628279D00CF2817 /* AppleACPIPS2Nub.h */,
+				27101C891628279D00CF2817 /* AppleACPIPS2Nub.cpp */,
+				27101C831628279D00CF2817 /* Supporting Files */,
+			);
+			path = AppleACPIPS2Nub;
+			sourceTree = "<group>";
+		};
+		27101C831628279D00CF2817 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27101C841628279D00CF2817 /* AppleACPIPS2Nub-Info.plist */,
+				27101C851628279D00CF2817 /* InfoPlist.strings */,
+				27101C8B1628279D00CF2817 /* AppleACPIPS2Nub-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		277890201628180800E81B58 = {
 			isa = PBXGroup;
 			children = (
 				277890321628180800E81B58 /* ApplePS2Controller */,
+				27101C61162824EC00CF2817 /* ApplePS2Keyboard */,
+				27101C821628279D00CF2817 /* AppleACPIPS2Nub */,
+				27FCD7E21633588900155ED2 /* ApplePS2Mouse */,
 				2778902F1628180800E81B58 /* Frameworks */,
 				2778902E1628180800E81B58 /* Products */,
 			);
@@ -45,6 +182,9 @@
 			isa = PBXGroup;
 			children = (
 				2778902D1628180800E81B58 /* ApplePS2Controller.kext */,
+				27101C60162824EC00CF2817 /* ApplePS2Keyboard.kext */,
+				27101C811628279D00CF2817 /* AppleACPIPS2Nub.kext */,
+				27FCD7E11633588900155ED2 /* ApplePS2Mouse.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +211,11 @@
 				277890381628180800E81B58 /* ApplePS2Controller.h */,
 				277890391628180800E81B58 /* ApplePS2Controller.cpp */,
 				277890331628180800E81B58 /* Supporting Files */,
+				27789041162818B000E81B58 /* ApplePS2Device.h */,
+				27789043162818EE00E81B58 /* ApplePS2KeyboardDevice.h */,
+				277890451628191600E81B58 /* ApplePS2MouseDevice.h */,
+				277890471628194900E81B58 /* ApplePS2KeyboardDevice.cpp */,
+				2778904B1628196F00E81B58 /* ApplePS2MouseDevice.cpp */,
 			);
 			path = ApplePS2Controller;
 			sourceTree = "<group>";
@@ -85,10 +230,56 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		27FCD7E21633588900155ED2 /* ApplePS2Mouse */ = {
+			isa = PBXGroup;
+			children = (
+				27FCD7E81633588900155ED2 /* ApplePS2Mouse.h */,
+				27FCD7E91633588900155ED2 /* ApplePS2Mouse.cpp */,
+				27FCD7E31633588900155ED2 /* Supporting Files */,
+			);
+			path = ApplePS2Mouse;
+			sourceTree = "<group>";
+		};
+		27FCD7E31633588900155ED2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27FCD7E41633588900155ED2 /* ApplePS2Mouse-Info.plist */,
+				27FCD7E51633588900155ED2 /* InfoPlist.strings */,
+				27FCD7EB1633588900155ED2 /* ApplePS2Mouse-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		27101C5C162824EC00CF2817 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E4F515163316810079150D /* ApplePS2Keyboard.h in Headers */,
+				27E4F516163316810079150D /* ApplePS2ToADBMap.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27101C7D1628279D00CF2817 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277890291628180800E81B58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27789042162818B000E81B58 /* ApplePS2Device.h in Headers */,
+				27789044162818EE00E81B58 /* ApplePS2KeyboardDevice.h in Headers */,
+				277890461628191600E81B58 /* ApplePS2MouseDevice.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FCD7DD1633588900155ED2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,6 +289,44 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		27101C5F162824EC00CF2817 /* ApplePS2Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27101C6D162824EC00CF2817 /* Build configuration list for PBXNativeTarget "ApplePS2Keyboard" */;
+			buildPhases = (
+				27101C5A162824EC00CF2817 /* Sources */,
+				27101C5B162824EC00CF2817 /* Frameworks */,
+				27101C5C162824EC00CF2817 /* Headers */,
+				27101C5D162824EC00CF2817 /* Resources */,
+				27101C5E162824EC00CF2817 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApplePS2Keyboard;
+			productName = ApplePS2Keyboard;
+			productReference = 27101C60162824EC00CF2817 /* ApplePS2Keyboard.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		27101C801628279D00CF2817 /* AppleACPIPS2Nub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27101C8C1628279D00CF2817 /* Build configuration list for PBXNativeTarget "AppleACPIPS2Nub" */;
+			buildPhases = (
+				27101C7B1628279D00CF2817 /* Sources */,
+				27101C7C1628279D00CF2817 /* Frameworks */,
+				27101C7D1628279D00CF2817 /* Headers */,
+				27101C7E1628279D00CF2817 /* Resources */,
+				27101C7F1628279D00CF2817 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppleACPIPS2Nub;
+			productName = AppleACPIPS2Nub;
+			productReference = 27101C811628279D00CF2817 /* AppleACPIPS2Nub.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
 		2778902C1628180800E81B58 /* ApplePS2Controller */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2778903E1628180800E81B58 /* Build configuration list for PBXNativeTarget "ApplePS2Controller" */;
@@ -107,14 +336,36 @@
 				277890291628180800E81B58 /* Headers */,
 				2778902A1628180800E81B58 /* Resources */,
 				2778902B1628180800E81B58 /* Rez */,
+				27FCD7F6163359AA00155ED2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27FCD7F5163359A000155ED2 /* PBXTargetDependency */,
+				27FCD7F11633599A00155ED2 /* PBXTargetDependency */,
+			);
+			name = ApplePS2Controller;
+			productName = ApplePS2Controller;
+			productReference = 2778902D1628180800E81B58 /* ApplePS2Controller.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		27FCD7E01633588900155ED2 /* ApplePS2Mouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27FCD7EE1633588900155ED2 /* Build configuration list for PBXNativeTarget "ApplePS2Mouse" */;
+			buildPhases = (
+				27FCD7DB1633588900155ED2 /* Sources */,
+				27FCD7DC1633588900155ED2 /* Frameworks */,
+				27FCD7DD1633588900155ED2 /* Headers */,
+				27FCD7DE1633588900155ED2 /* Resources */,
+				27FCD7DF1633588900155ED2 /* Rez */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ApplePS2Controller;
-			productName = ApplePS2Controller;
-			productReference = 2778902D1628180800E81B58 /* ApplePS2Controller.kext */;
+			name = ApplePS2Mouse;
+			productName = ApplePS2Mouse;
+			productReference = 27FCD7E11633588900155ED2 /* ApplePS2Mouse.kext */;
 			productType = "com.apple.product-type.kernel-extension";
 		};
 /* End PBXNativeTarget section */
@@ -139,11 +390,30 @@
 			projectRoot = "";
 			targets = (
 				2778902C1628180800E81B58 /* ApplePS2Controller */,
+				27101C5F162824EC00CF2817 /* ApplePS2Keyboard */,
+				27101C801628279D00CF2817 /* AppleACPIPS2Nub */,
+				27FCD7E01633588900155ED2 /* ApplePS2Mouse */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		27101C5D162824EC00CF2817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27101C66162824EC00CF2817 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27101C7E1628279D00CF2817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27101C871628279D00CF2817 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2778902A1628180800E81B58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,10 +422,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27FCD7DE1633588900155ED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FCD7E71633588900155ED2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXRezBuildPhase section */
+		27101C5E162824EC00CF2817 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27101C7F1628279D00CF2817 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2778902B1628180800E81B58 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FCD7DF1633588900155ED2 /* Rez */ = {
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,17 +464,72 @@
 /* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		27101C5A162824EC00CF2817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E4F514163316810079150D /* ApplePS2Keyboard.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27101C7B1628279D00CF2817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27101C8A1628279D00CF2817 /* AppleACPIPS2Nub.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277890271628180800E81B58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2778903A1628180800E81B58 /* ApplePS2Controller.cpp in Sources */,
+				277890491628194900E81B58 /* ApplePS2KeyboardDevice.cpp in Sources */,
+				2778904C1628196F00E81B58 /* ApplePS2MouseDevice.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FCD7DB1633588900155ED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FCD7EA1633588900155ED2 /* ApplePS2Mouse.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		27FCD7F11633599A00155ED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27101C5F162824EC00CF2817 /* ApplePS2Keyboard */;
+			targetProxy = 27FCD7F01633599A00155ED2 /* PBXContainerItemProxy */;
+		};
+		27FCD7F5163359A000155ED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27FCD7E01633588900155ED2 /* ApplePS2Mouse */;
+			targetProxy = 27FCD7F4163359A000155ED2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		27101C64162824EC00CF2817 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27101C65162824EC00CF2817 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27101C851628279D00CF2817 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27101C861628279D00CF2817 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		277890351628180800E81B58 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -184,9 +538,92 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		27FCD7E51633588900155ED2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27FCD7E61633588900155ED2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		27101C6B162824EC00CF2817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApplePS2Keyboard/ApplePS2Keyboard-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "ApplePS2Keyboard/ApplePS2Keyboard-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				"INSTALL_PATH[sdk=*]" = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULE_NAME = com.apple.ApplePS2Keyboard;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		27101C6C162824EC00CF2817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApplePS2Keyboard/ApplePS2Keyboard-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "ApplePS2Keyboard/ApplePS2Keyboard-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULE_NAME = com.apple.ApplePS2Keyboard;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		27101C8D1628279D00CF2817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppleACPIPS2Nub/AppleACPIPS2Nub-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "AppleACPIPS2Nub/AppleACPIPS2Nub-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULE_NAME = com.apple.AppleACPIPS2Nub;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		27101C8E1628279D00CF2817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppleACPIPS2Nub/AppleACPIPS2Nub-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "AppleACPIPS2Nub/AppleACPIPS2Nub-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULE_NAME = com.apple.AppleACPIPS2Nub;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
 		2778903C1628180800E81B58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -242,14 +679,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ApplePS2Controller/ApplePS2Controller-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "ApplePS2Controller/ApplePS2Controller-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MODULE_NAME = com.apple.ApplePS2Controller;
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
@@ -258,12 +697,46 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ApplePS2Controller/ApplePS2Controller-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "ApplePS2Controller/ApplePS2Controller-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MODULE_NAME = com.apple.ApplePS2Controller;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		27FCD7EC1633588900155ED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApplePS2Mouse/ApplePS2Mouse-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "ApplePS2Mouse/ApplePS2Mouse-Info.plist";
+				MODULE_NAME = com.apple.ApplePS2Mouse;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		27FCD7ED1633588900155ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApplePS2Mouse/ApplePS2Mouse-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "ApplePS2Mouse/ApplePS2Mouse-Info.plist";
+				MODULE_NAME = com.apple.ApplePS2Mouse;
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
@@ -273,6 +746,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		27101C6D162824EC00CF2817 /* Build configuration list for PBXNativeTarget "ApplePS2Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27101C6B162824EC00CF2817 /* Debug */,
+				27101C6C162824EC00CF2817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27101C8C1628279D00CF2817 /* Build configuration list for PBXNativeTarget "AppleACPIPS2Nub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27101C8D1628279D00CF2817 /* Debug */,
+				27101C8E1628279D00CF2817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		277890251628180800E81B58 /* Build configuration list for PBXProject "ApplePS2Controller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -287,6 +778,15 @@
 			buildConfigurations = (
 				2778903F1628180800E81B58 /* Debug */,
 				277890401628180800E81B58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27FCD7EE1633588900155ED2 /* Build configuration list for PBXNativeTarget "ApplePS2Mouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FCD7EC1633588900155ED2 /* Debug */,
+				27FCD7ED1633588900155ED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
